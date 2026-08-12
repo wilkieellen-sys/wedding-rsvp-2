@@ -298,7 +298,7 @@
       <input type="email" id="contactEmail" placeholder="jamie@example.com">
     </div>
     <div>
-      <label for="songRequest">Song request (one per party)</label>
+      <label for="songRequest">Song request (optional)</label>
       <input type="text" id="songRequest" placeholder="A track that'll get you on the dance floor">
     </div>
     <div>
@@ -641,7 +641,7 @@
       });
       const data = await res.json();
       if (data.result === 'success'){
-        statusEl.textContent = "Thank you — we can't wait to celebrate with you!";
+        statusEl.textContent = "Thank you for your response!";
         statusEl.className = 'status success';
       } else {
         statusEl.textContent = 'Something went wrong — please try again.';
